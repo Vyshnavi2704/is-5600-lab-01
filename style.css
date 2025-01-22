@@ -14,3 +14,106 @@ body {
 }
 
 /* add styles here */
+/* General Styles */
+body {
+   margin: 0;
+   font-family: Arial, sans-serif;
+   line-height: 1.6;
+   color: #333;
+ }
+ 
+ /* Navigation Bar */
+ nav {
+   background-color: #333;
+   color: white;
+   padding: 10px 20px;
+ }
+ 
+ nav ul {
+   list-style: none;
+   display: flex;
+   justify-content: space-around;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ nav ul li {
+   margin: 0;
+ }
+ 
+ nav ul li a {
+   color: white;
+   text-decoration: none;
+   padding: 5px 10px;
+   transition: background-color 0.3s;
+ }
+ 
+ nav ul li a:hover {
+   background-color: #555;
+   border-radius: 5px;
+ }
+ 
+ /* Hero Section */
+ .hero {
+   background-image: url('https://via.placeholder.com/1500x500');
+   background-size: cover;
+   background-position: center;
+   color: white;
+   text-align: center;
+   padding: 100px 20px;
+ }
+ 
+ .hero h1 {
+   font-size: 3rem;
+   margin: 0;
+ }
+ 
+ .hero p {
+   font-size: 1.5rem;
+   margin: 20px 0;
+ }
+ 
+ /* Card Boxes Section */
+ .cards {
+   display: flex;
+   justify-content: space-around;
+   gap: 20px;
+   padding: 20px;
+   margin: 0 auto;
+   max-width: 1200px;
+ }
+ 
+ .card {
+   background-color: #f9f9f9;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   padding: 20px;
+   text-align: center;
+   flex: 1;
+ }
+ 
+ .card h3 {
+   margin: 10px 0;
+   font-size: 1.5rem;
+ }
+ 
+ .card p {
+   font-size: 1rem;
+   color: #666;
+ }
+ 
+ .card:hover {
+   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+   transform: translateY(-5px);
+   transition: 0.3s;
+ }
+ 
+ /* Responsive Design */
+ @media (max-width: 768px) {
+   .cards {
+     flex-direction: column;
+     gap: 20px;
+   }
+ }
+ 
